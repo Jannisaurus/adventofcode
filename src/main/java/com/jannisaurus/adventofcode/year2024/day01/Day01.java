@@ -1,11 +1,5 @@
 package com.jannisaurus.adventofcode.year2024.day01;
 
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.io.IOException;
-import java.util.List;
-
-
 public class Day01 {
     public static void main(String[] args) {
         // take input from file: src\main\resources\day01_input.txt
