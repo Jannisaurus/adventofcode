@@ -21,13 +21,6 @@ public class InputParser {
 
         List<int[]> parsedInput = parseLines(stringInput);
 
-        // Read file
-        
-        // Split by new line
-        // Split by space
-        // Convert to int
-        // Return list of arrays
-
         return parsedInput;
     }
 

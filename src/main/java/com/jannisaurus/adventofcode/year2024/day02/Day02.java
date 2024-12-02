@@ -20,7 +20,11 @@ public class Day02 {
 
         int part1 = Solution.part1(input);
 
+        int part2 = Solution.part2(input);
+
         System.out.println("Part 1: " + part1);
+
+        System.out.println("Part 2: " + part2);
 
         long endTime = System.currentTimeMillis();
 
