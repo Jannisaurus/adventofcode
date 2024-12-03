@@ -1,5 +1,8 @@
 package com.jannisaurus.adventofcode.year2024.day01;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class Day01 {
     public static void main(String[] args) {
 
@@ -18,6 +21,10 @@ public class Day01 {
         int part1 = Solution.part1(input);
 
         System.out.println("Part 1: " + part1);
+
+        int part2 = Solution.part2(input);
+
+        System.out.println("Part 2: " + part2);
 
         long endTime = System.currentTimeMillis();
 
