@@ -15,8 +15,31 @@ public class Solution {
         regexNumber();
     }
 
-    public static void part2() {
+    public static int part2(String inputString) {
+        String regex = "(do\\(\\))|(don't\\(\\))|(mul\\(\\d+,\\d+\\))";
+        Pattern pattern = Pattern.compile(regex);
 
+        Matcher matcher = pattern.matcher(inputString);
+
+        boolean enabled = true; 
+        int result = 0;
+
+        while (matcher.find()) {
+            String match = matcher.group();
+
+            if (match.equals("do()")) {
+                enabled = true;
+            } else if (match.equals("don't()")) {
+                enabled = false;
+            } else if (enabled && match.startsWith("mul(")) {
+                int firstNumber = Integer.parseInt(match.substring(match.indexOf('(') + 1, match.indexOf(',')));
+                int secondNumber = Integer.parseInt(match.substring(match.indexOf(',') + 1, match.indexOf(')')));
+                result += firstNumber * secondNumber;
+            }
+        }
+
+        System.out.println("Result (Part 2): " + result);
+        return result;
     }
 
     private static void regex(String inputString) {
@@ -29,8 +52,6 @@ public class Solution {
         while (matcher.find()) {
             matches.add(matcher.group());
         }
-
-        System.out.println(matches);
 
     }
 

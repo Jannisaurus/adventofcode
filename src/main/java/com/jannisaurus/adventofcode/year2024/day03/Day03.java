@@ -13,9 +13,9 @@ public class Day03 {
         String input = InputParser.parseInput(fileName);
 
         // solve problem using Solution, one static method per part
-        Solution.part1(input);
+        // Solution.part1(input);
 
-        Solution.part2();
+        Solution.part2(input);
 
         long endTime = System.currentTimeMillis();
 

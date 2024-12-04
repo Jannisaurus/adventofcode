@@ -19,8 +19,6 @@ public class InputParser {
 
         input = input.replaceAll("\\s+", "");
 
-        System.out.println(input);
-
         return input;
     }
 }
